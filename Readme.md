@@ -1,5 +1,5 @@
 
-## Variable and Function Filled Terraform - Creating a Simple AWS Web Server behind an ALB
+## ⚡ Variable and Function Filled Terraform - Creating a Simple AWS Web Server behind an ALB ⚡
 
 Thank you for stopping by. This Terraform project is designed to be highly flexible and reusable, leveraging a variable-driven approach to control the deployment of a scalable, public-facing web server architecture on AWS, with http traffic managed by a created Application Load Balancer (ALB). The configuration is split into several logical `.tf` files for clarity and maintainability.
 
