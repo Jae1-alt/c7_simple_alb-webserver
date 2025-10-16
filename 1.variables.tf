@@ -7,14 +7,15 @@ variable "region" {
 variable "vpc_cidr" {
   type        = string
   description = "Desired CIDR for VPC"
-  default     = "10.190.0.0/16"
+  default     = "10.180.0.0/16"
 }
 
 variable "public_subnets" {
-  description = "At least 2 subnets. The 'key : value' pair in the this variable will be used to create the subnets, number of subnets(based on the number of 'key:value' pairs, and the 'value' in the pair will be used to create the associeted subnet(s))"
+  description = "The 'key : value' pair in the this variable will be used to create the subnets, number of subnets(based on the number of 'key:value' pairs, and the 'value' in the pair will be used to create the associeted subnet(s))"
   type        = map(number)
   default = {
-    "class7_a" = 0
+    "class7_a" = 1
+    "class7_b" = 2
   }
 }
 
@@ -23,6 +24,7 @@ variable "user_data_script" {
   type        = map(string)
   default = {
     "class7_a" = "user_ba.sh"
+    "class7_b" = "user_bb.sh"
   }
 }
 
