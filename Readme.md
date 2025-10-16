@@ -8,6 +8,9 @@ By default, running this project will provision a single VPC containing two publ
 Below is the proposed architecture:
 ![](attachment/999e6c15ee530e264d5a81bb59c1b1ee.png)
 
+
+Updates to this reading coming soon.....
+
 ---
 ## 📂  Files and Their Structure
 
