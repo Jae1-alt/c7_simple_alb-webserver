@@ -89,10 +89,10 @@ cat <<EOF > /var/www/html/index.html
         </div>
 
         <div class="button-container">
-            <a href="https://scontent.fmbj2-2.fna.fbcdn.net/v/t39.30808-6/480791260_1616688689015102_2464800278410713211_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=8xiryEOrWIYQ7kNvwGh4e2q&_nc_oc=Adl2SRMkxkNhlUxTRQRzgTZlh1nlijFJfzyr-Frh1R1DA3a9AUrhBFO7TreRLQgieNY&_nc_zt=23&_nc_ht=scontent.fmbj2-2.fna&_nc_gid=t2ScWN2AEB0GzTP9SW5T7A&oh=00_Afc_FaWCn1DrBHFaNZf2ct4M9S54CjjEez3HAjb4wVVJ4A&oe=68E503EC" target="_blank" class="repo-button">
+            <a href="https://s.yimg.com/ny/api/res/1.2/h4wYAD4g999h1LHvNkm0DA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTgwMA--/https://media.zenfs.com/en/aol_bored_panda_979/ad897869a3d3d3b86da214f079e5b89b" target="_blank" class="repo-button">
                 Don't want to read? Great, have this!
             </a>
-            <a href="https://github.com/Jae1-alt/c7_250915_simple_ec2.git" target="_blank" class="repo-button">
+            <a href="https://github.com/Jae1-alt/c7_simple_alb-webserver/tree/main" target="_blank" class="repo-button">
                 This project's GitHub Repo.
             </a>
         </div>
