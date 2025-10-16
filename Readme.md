@@ -103,10 +103,6 @@ This configuration provides a solid foundation, but it's important to understand
     
     - **Impact:** A failure affecting the entire region (e.g., a major weather event or network outage) would cause a complete and prolonged service disruption with no failover.
         
-- **Ephemeral Instance Storage:** The EC2 instances are designed to be disposable ("immutable").
-    
-    - **Impact:** Any data written to their local disks after they boot (like application log files or user-uploaded content) will be permanently lost whenever an instance is terminated or replaced.
-        
 - **Basic Health Checks:** The ALB Target Group uses a very simple health check that only verifies the web server's root path (`/`) is responding.
     
     - **Impact:** This might not detect if the application itself has frozen or lost its connection to a database. A failed application could still report as "healthy" to the load balancer, which would continue to send user traffic to a broken instance.
@@ -135,12 +131,6 @@ The following improvements can be implemented to address the limitations and evo
     - **Action:** Convert this entire project into a self-contained, reusable Terraform module.
         
     - **Benefit:** This is the most significant step for reusability. It would allow you to deploy identical `dev`, `staging`, and `prod` environments from a single, clean root configuration by simply calling the module with different input variables.
-        
-- **Decouple Application State:**
-    
-    - **Action:** To solve the **Ephemeral Instance Storage** problem, any data that needs to persist (like user sessions or temporary files) should be stored in an external, managed service like **Amazon DynamoDB** (for key-value storage).
-        
-    - **Benefit:** This makes the EC2 instances truly stateless and disposable, which is a core principle of modern cloud architecture.
         
 
 ---
